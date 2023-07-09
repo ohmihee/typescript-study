@@ -69,3 +69,8 @@ test("에러 발생", () => {
   expect(() => fn.throwErr()).toThrow();
   // 에러를 비교해준다.
 });
+
+// TODO: 비동기 함수 처리 관련 ======
+test("3초 후 받아온 이름은 Mike", () => {
+  function callback(name: string) {}
+});

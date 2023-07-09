@@ -5,5 +5,11 @@ const fn = {
   throwErr: () => {
     throw new Error("error");
   },
+  getName: (callback: Function) => {
+    const name = "Mike";
+    setTimeout(() => {
+      callback(name);
+    }, 3000);
+  },
 };
 export default fn;
